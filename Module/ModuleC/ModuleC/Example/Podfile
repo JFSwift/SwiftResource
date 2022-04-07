@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ModuleC_Example' do
+  pod 'ModuleC', :path => '../'
+
+  target 'ModuleC_Tests' do
+    inherit! :search_paths
+    
+  end
+end
